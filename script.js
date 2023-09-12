@@ -59,7 +59,7 @@ function iniciar(){
                                             </div>
                                         </div>`;
         link_wsp = document.getElementById("link_suscripcion");
-        link_wsp.setAttribute("href",link_wsp_nro + link_plan + productos[i].id)
+        link_wsp.setAttribute("href",link_wsp_nro + link_plan +"#"+productos[i].id);
         console.log(productos[i].nombre);
     }
 }
