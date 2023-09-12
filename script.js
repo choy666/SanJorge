@@ -17,9 +17,8 @@ var checCard3;
 var card1;
 var card2;
 var card3;
-var link_wsp;
 var link_wsp_nro="https://api.whatsapp.com/send?phone=+543834046923h&text= Hola!, estoy interesado en este plan. Como puedo inscribirme?😄.";
-var link_plan="https://choy666.github.io/SanJorge/pages/planes.html#";
+var link_wsp;
 // lista de productos, almacena una lista de productos de lo contrario un array
 let productos = obtenerAlmacenamientoLocal('productos') || [];
 
@@ -59,8 +58,7 @@ function iniciar(){
                                             </div>
                                         </div>`;
         link_wsp = document.getElementById("link_suscripcion");
-        link_wsp.setAttribute("href",link_wsp_nro + link_plan +"#"+productos[i].id);
-        console.log(productos[i].nombre);
+        link_wsp.setAttribute("href",link_wsp_nro+"https://choy666.github.io/SanJorge/pages/planes.html#${productos[i].id}");
     }
 }
 function filtro(){
