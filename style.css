@@ -1,0 +1,337 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight: 700;
+}
+ul li{
+    margin-left: 50px;
+}
+a{
+    text-decoration: none;
+}
+.nav-link{
+    font-size: 25px;
+}
+.nav-link:hover{
+    color: red;
+}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,0, 0.5)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.banner-header{
+    height: 700px;
+    /* background-image: url("./images/header.png"); */
+    background-image: url("https://static.landkit.engeni.com/assets/2808/e971b6fb-9ec1-45f4-a4f9-406a594c8073/e92ec6511b2b0b9489bf.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+.sanjorge-info{
+    width: 75%;
+    background-color: rgba(121, 231, 25, 0.679);
+    color: black;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 30px;
+}
+main{
+    margin-top: 30px;
+}
+article{
+    margin: 30px;
+}
+.titulo-main{
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: .08em;
+    background-color: rgba(0,107,0,.1);
+    border-radius: 10px;
+    background-color: rgba(142, 255, 142, 0.379);
+    color: rgb(178, 66, 66);
+}
+ul li{
+    color: #006b00;
+}
+.article-info{
+    margin-top: 15px;
+}
+.article-info h3{
+    margin-top: 15px;
+    letter-spacing: -.01em;
+    line-height: 1.35;
+}
+.article-info ul{
+    margin-top: 20px;
+    padding-left: 0px;
+}
+.article-info ul li{
+    margin-top: 10px;
+    padding-left: 0px;
+}
+.text-info-1{
+    font-size: 20px;
+    color: #006b00;
+}
+.text-info-2{
+    font-size: 17px;
+    color: rgb(120, 120, 120);
+}
+.bg-img-info{
+    background-image: url("./images/adjudicado_index.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+.card-cap-ahorro{
+    margin: 10px;
+    padding: 0;
+    backdrop-filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 35px 35px 68px 0px rgba(157, 177, 255, 0.2), inset -8px -8px 16px 0px rgba(157, 177, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+.box-shadow{
+    padding: 40px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,-15px -15px 30px #ffffff;
+}
+/*  */
+.btn-msj {
+    padding: 10px 40px;
+    background-color: #008542;
+    color: #fff;
+    text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+    position: relative;
+    border: 0;
+    z-index: 1;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .8rem 1.5rem;
+    font-weight: 900;
+    transition: all 0.7s cubic-bezier(0,.8,.26,.99);
+}
+.btn-msj:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    transition: .7s cubic-bezier(0,.8,.26,.99);
+    z-index: -1;
+    background-color: #008542!important;
+    box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+}
+.btn-msj:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+    transition: .7s cubic-bezier(0,.8,.26,.99);
+}
+.btn-msj:hover:before {
+    box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+}
+.btn-msj:hover:after {
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+}
+.btn-msj:active {
+    transform: translateY(5px);
+}
+.btn-msj:active:after {
+    box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+}
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    padding: 0;
+    height: 150px;
+    background: rgb(183, 226, 25);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div{
+    height: 200px;
+}
+footer div h4{
+    font-family: monospace;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+.bi-whatsapp{
+    font-size: 30px;
+    margin: 20px;
+    color: black;
+}
+.fixed-bottom .bi-whatsapp{
+    font-size: 50px;
+    color: #008542;
+}
+
+
+/*  */
+.catalogo{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+aside{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 200px;
+}
+.contenedor-checkbox {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-checkbox label{
+    margin: 10px;
+}
+.customCheckBox {
+    user-select: none;
+    cursor: pointer;
+    padding: 4px 10px;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: rgba(255, 255, 255, 0.7);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    height: 32px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px 1px 1px 0px;
+    transition-property: color, background-color, box-shadow;
+
+}
+.customCheckBox:hover {
+    background-color: #2c2c2c;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+}
+.checkbox-txt{
+    letter-spacing: 1px;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 900;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transform: translateY(0px);   
+    transition-property: transform; 
+}
+.customCheckBox:hover .checkbox-txt {
+    transform: translateY(-2px);
+}
+.customCheckBox {
+    border-radius: 5px;
+}
+.checkbox-input {
+    display: none;
+}
+.checkbox-input:checked + .box-checkbox .customCheckBox {
+    background-color: #2d6737;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+}
+.checkbox-input:checked + .box-checkbox .customCheckBox .checkbox-txt {
+    transform: translateY(-2px);
+}
+.checkbox-input:checked + .box-checkbox .customCheckBox:hover {
+    background-color: #34723f;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.15) 0px 3px 6px 2px;
+}
+.box-checkbox .customCheckBox:hover .checkbox-txt {
+    transform: translateY(-2px);
+}
+
+/*  */
+.catalogo section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+.card-precio
+{
+    font-family: monospace;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+/* media queries*/
+/* @media screen and (max-width: 576px) */
+@media screen and (max-width: 767px)
+{
+    .article-servicios{
+        flex-direction: column;
+    }
+    .bg-img-info{
+        height: 220px;
+    }
+    .link-consulta{
+        font-size: 10px;
+    }
+    .banner-header{
+        height: 220px;
+    }
+    .titulo-main{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .text-info-1{
+        font-size: 13px;
+    }
+    .text-info-2{
+        font-size: 12px;
+    }
+    h4{
+        font-size: 13px;
+    }
+    .box-shadow iframe{
+        height: 200px;
+    }
+    .bi-whatsapp{
+        font-size: 13px;
+    }
+    .fixed-bottom .bi-whatsapp{
+        font-size: 30px;
+    }
+    .contenedor-checkbox{
+        justify-content: center;
+        flex-direction: row;
+    }
+    .catalogo{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        width: 46%;
+    }
+    footer{
+        height: 100px;
+    }
+
+}
