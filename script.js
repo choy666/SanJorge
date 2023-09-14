@@ -47,21 +47,21 @@ function iniciar(){
 
     // muestro los productos
 
-    // contendorProductos.innerHTML = '';
-    // for(let i = 0; i < productos.length; i++) {
-    //     contendorProductos.innerHTML += `<div class="card col-6 col-lg-3 border-danger ${productos[i].filtro}" id="${productos[i].id}">
-    //                                         <img class="card-img-top" src="${productos[i].urlImagen}">
-    //                                         <div class="card-body">
-    //                                             <h5 class="card-title">${productos[i].nombre}</h5>
-    //                                             <p class="idProducto card-text">Codigo: ${productos[i].id}</p>
-    //                                             <div class="alert alert-warning text-center card-precio" role="alert">$${productos[i].valor}</div>
-    //                                             <a href="https://wa.link/s905gq" id="link_suscripcion"><button type="button" class="btn btn-outline-danger col-12">Suscribirme</button>
-    //                                         </div>
-    //                                     </div>`;
-    //     link_wsp = document.getElementById("link_suscripcion");
-    //     producto="https://choy666.github.io/SanJorge/pages/planes.html#"+productos[i].id;
-    //     link_wsp.setAttribute("href",link_wsp_nro+producto);
-    // }
+    contendorProductos.innerHTML = '';
+    for(let i = 0; i < productos.length; i++) {
+        contendorProductos.innerHTML += `<div class="card col-6 col-lg-3 border-danger ${productos[i].filtro}" id="${productos[i].id}">
+                                            <img class="card-img-top" src="${productos[i].urlImagen}">
+                                            <div class="card-body">
+                                                <h5 class="card-title">${productos[i].nombre}</h5>
+                                                <p class="idProducto card-text">Codigo: ${productos[i].id}</p>
+                                                <div class="alert alert-warning text-center card-precio" role="alert">$${productos[i].valor}</div>
+                                                <a href="https://wa.link/s905gq" id="link_suscripcion"><button type="button" class="btn btn-outline-danger col-12">Suscribirme</button>
+                                            </div>
+                                        </div>`;
+        link_wsp = document.getElementById("link_suscripcion");
+        producto=productos[i].urlImagen;
+        link_wsp.setAttribute("href",link_wsp_nro+" Codigo: "+productos[i].id+" Nombre: "+productos[i].nombre+" "+producto);
+    }
 }
 function filtro(){
     if(checCard1.checked == false){
