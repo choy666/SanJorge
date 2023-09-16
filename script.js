@@ -56,7 +56,7 @@ function iniciar(){
     // for(let i = 0; i < productos.length; i++) {
     //     contendorProductos.innerHTML += `<div class="card col-6 col-lg-3 border-danger ${productos[i].filtro}">
     //                                         <img class="card-img-top" src="${productos[i].urlImagen}">
-    //                                         <div class="card-body">
+    //                                         <div class="card-body d-flex flex-column justify-content-between">
     //                                             <h5 class="card-title">${productos[i].nombre}</h5>
     //                                             <p class="card-text">Codigo: ${productos[i].id}</p>
     //                                             <p class="card-text">Valor Nominal: ${productos[i].valorNominal}</p>

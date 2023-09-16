@@ -163,6 +163,7 @@ span{
     align-items: center;
 }
 footer{
+    margin-top: 50px;
     padding: 0;
     height: 150px;
     background: rgb(183, 226, 25);
@@ -272,7 +273,6 @@ aside{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px;
 }
 .card-precio
 {
