@@ -18,21 +18,21 @@ const añadirProducto = document.getElementById('productoAñadir');
 const añadirValor = document.getElementById('valorAñadir');
 const añadirImagen = document.getElementById('imagenAñadir');
 const añadirId = document.getElementById('idAñadir');
-
+const añadirValorN = document.getElementById('valorNadñadir');
 const añadirFiltro = document.getElementById('filtroAñadir');
 
 document.getElementById("botonAñadir").addEventListener("click", function (event) {
     event.preventDefault();
     let productoAñadir = añadirProducto.value;
     let valorAñadir = añadirValor.value;
+    let valorNañadir = añadirValorN.value;
     let imagenAñadir = añadirImagen.value;
     let idAñadir = añadirId.value;
-    
     let filtroAñadir = añadirFiltro.value;
 
     let van = true;
 
-    if (productoAñadir == '' || valorAñadir == '' || imagenAñadir == '' ||  idAñadir == '' ||  filtroAñadir == '' ) {
+    if (productoAñadir == '' || valorAñadir == '' || imagenAñadir == '' ||  idAñadir == '' ||  filtroAñadir == '' || valorNañadir == '') {
         mensaje.classList.add('llenarCampos');
         setTimeout(() => { mensaje.classList.remove('llenarCampos') }, 2500);
         van = false;
@@ -51,6 +51,7 @@ document.getElementById("botonAñadir").addEventListener("click", function (even
         productos.push({
             nombre: productoAñadir,
             valor: valorAñadir,
+            valorNominal: valorNañadir,
             urlImagen: imagenAñadir,
             id: idAñadir,
             filtro: filtroAñadir
@@ -146,8 +147,8 @@ window.addEventListener("load", () => {
                                         <div class="card-body">
                                             <h5 class="card-title">${productos[i].nombre}</h5>
                                             <p class="idProducto card-text">Codigo: ${productos[i].id}</p>
-                                            <p class="filtroProducto">Filtro: $${productos[i].valor}</p>
-                                            <div class="alert alert-warning text-center" role="alert">${productos[i].id}</div>
+                                            <p>Valor Nominal: $${productos[i].valorNominal}</p>
+                                            <div class="alert alert-warning text-center" role="alert">${productos[i].valor}</div>
                                         </div>
                                     </div>`;
     }
