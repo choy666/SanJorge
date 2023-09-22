@@ -202,7 +202,7 @@ aside{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     min-width: 200px;
 }
 .contenedor-checkbox {
@@ -269,6 +269,7 @@ aside{
 
 /*  */
 .catalogo section{
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -334,4 +335,11 @@ aside{
         height: 100px;
     }
 
+}
+@media screen and (min-width: 768px)
+{
+    .contenedor-checkbox{
+        position: fixed;
+        top: 170px;
+    }
 }
