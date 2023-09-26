@@ -328,6 +328,7 @@ aside{
     }
     .catalogo{
         grid-template-columns: 1fr;
+        display : inline;
     }
     .card{
         width: 46%;
