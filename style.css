@@ -25,7 +25,6 @@ a{
 }
 .banner-header{
     height: 700px;
-    /* background-image: url("./images/header.png"); */
     background-image: url("https://static.landkit.engeni.com/assets/2808/e971b6fb-9ec1-45f4-a4f9-406a594c8073/e92ec6511b2b0b9489bf.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -267,10 +266,8 @@ aside{
 .box-checkbox .customCheckBox:hover .checkbox-txt {
     transform: translateY(-2px);
 }
-
-/*  */
 .catalogo section{
-    margin-top: 40px;
+    margin-top: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -281,6 +278,23 @@ aside{
     font-family: monospace;
     font-weight: 900;
     letter-spacing: 1px;
+}
+.main-sorteo{
+    padding: 50px;
+}
+.ultimos-adjudicados{
+    letter-spacing: 5px;
+    margin-top: 70px;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    font-family: 'Dela Gothic One', cursive;
+}
+.ua-header{
+    background-color:#f44848;
+}
+.ua-header p{
+    color:white;
+    font-size: 25px;
 }
 /* media queries*/
 /* @media screen and (max-width: 576px) */
@@ -296,6 +310,7 @@ aside{
         font-size: 10px;
     }
     .banner-header{
+        margin-top: 70px;
         height: 220px;
     }
     .titulo-main{
@@ -325,13 +340,11 @@ aside{
     .contenedor-checkbox{
         justify-content: center;
         flex-direction: row;
+        margin-top: 70px;
     }
     .catalogo{
         grid-template-columns: 1fr;
         display : inline;
-    }
-    .card{
-        width: 46%;
     }
     footer{
         height: 100px;
@@ -344,24 +357,4 @@ aside{
         position: fixed;
         top: 170px;
     }
-}
-
-
-/* */
-.main-sorteo{
-    padding: 50px;
-}
-.ultimos-adjudicados{
-    letter-spacing: 5px;
-    margin-top: 70px;
-    border-radius: 20px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    font-family: 'Dela Gothic One', cursive;
-}
-.ua-header{
-    background-color:#f44848;
-}
-.ua-header p{
-    color:white;
-    font-size: 25px;
 }
